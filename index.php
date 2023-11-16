@@ -49,6 +49,7 @@ $taskManager->addTask("Hacer la compra");
 $taskManager->addTask("Preparar la presentación");
 $taskManager->showTasks();
 $taskManager->deleteTask(0);
+$taskManager->showTasks();
 
 
 
