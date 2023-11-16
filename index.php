@@ -35,6 +35,10 @@ class TaskManager {
             $this->tasks = explode("\n", $contents);
         }
     }
+    private function saveTasks() {
+        // Guardar las tareas en el archivo
+        file_put_contents($this->filename, implode("\n", $this->tasks));
+    }
 
 }
 
