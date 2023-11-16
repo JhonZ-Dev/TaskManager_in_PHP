@@ -47,6 +47,7 @@ class TaskManager {
 $taskManager = new TaskManager();
 $taskManager->addTask("Hacer la compra");
 $taskManager->addTask("Preparar la presentación");
+$taskManager->showTasks();
 
 
 
