@@ -16,6 +16,12 @@ class TaskManager {
         $this->tasks[] = $task;
         $this->saveTasks();
     }
+    public function deleteTask($taskId) {
+        // Eliminar una tarea por su ID
+        unset($this->tasks[$taskId]);
+        $this->tasks = array_values($this->tasks); // Reindexar el array
+        $this->saveTasks();
+    }
 
 
 }
