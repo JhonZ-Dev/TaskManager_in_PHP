@@ -28,6 +28,12 @@ class TaskManager {
             echo "Tarea #$index: $task\n";
         }
     }
+    private function loadTasks() {
+        // Cargar tareas desde el archivo
+        if (file_exists($this->filename)) {
+            $contents = file_get_contents($this->filename);
+            $this->tasks = explode("\n", $contents);
+        }
 
 }
 
