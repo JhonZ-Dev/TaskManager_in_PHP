@@ -45,6 +45,7 @@ class TaskManager {
 
 }
 $taskManager = new TaskManager();
+$taskManager->addTask("Hacer la compra");
 
 
 
