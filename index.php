@@ -34,6 +34,7 @@ class TaskManager {
             $contents = file_get_contents($this->filename);
             $this->tasks = explode("\n", $contents);
         }
+    }
 
 }
 
