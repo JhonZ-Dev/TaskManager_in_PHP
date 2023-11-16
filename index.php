@@ -40,6 +40,8 @@ class TaskManager {
         file_put_contents($this->filename, implode("\n", $this->tasks));
     }
 
+    //Ejemplo de uso
+
 }
 
 
