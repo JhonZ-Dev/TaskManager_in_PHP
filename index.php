@@ -41,8 +41,11 @@ class TaskManager {
     }
 
     //Ejemplo de uso
+    
 
 }
+$taskManager = new TaskManager();
+
 
 
 ?>
