@@ -22,7 +22,12 @@ class TaskManager {
         $this->tasks = array_values($this->tasks); // Reindexar el array
         $this->saveTasks();
     }
-
+    public function showTasks() {
+        // Mostrar la lista de tareas pendientes
+        foreach ($this->tasks as $index => $task) {
+            echo "Tarea #$index: $task\n";
+        }
+    }
 
 }
 
