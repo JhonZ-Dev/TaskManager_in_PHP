@@ -2,9 +2,12 @@
 
 echo "Hello World!";
 class TaskManager {
-    public function __construct() {
-        echo "TaskManager created!";
-    }
+
+    private $tasks = [];
+    private $filename = 'tasks.txt';
+
+
+
 }
 
 
