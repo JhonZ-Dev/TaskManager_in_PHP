@@ -11,6 +11,12 @@ class TaskManager {
         $this->loadTasks();
     }
 
+    public function addTask($task) {
+        // Agregar una tarea
+        $this->tasks[] = $task;
+        $this->saveTasks();
+    }
+
 
 }
 
